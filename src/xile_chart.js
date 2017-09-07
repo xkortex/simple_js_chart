@@ -21,10 +21,14 @@ const XileLineChart = React.createClass({
   },
 	componentDidMount(){
   	setInterval(function(){
-    var data= this.state.data;
-    i++;
-    data = [...data, {name: 'Page '+i, uv: 3490+i, pv: 4300+i, amt: 2100+i}];
-    this.setState({data:data});
+  	  console.log('update');
+      let data= this.state.data;
+      i++;
+      if (data.length > 20) {
+        data = data.slice(1);
+      }
+      data = [...data, {name: 'Page '+i, uv: Math.random() * 1000, pv: Math.random() * 1000, amt: Math.random() * 1000}];
+      this.setState({data:data});
     }.bind(this),100)
   },
 	render () {
