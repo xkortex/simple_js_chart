@@ -15,7 +15,8 @@ const data = [
 
 class SimpleLineChart extends React.Component {
     constructor() {
-    super();
+      console.log('just made a chart');
+      super();
   }
 	render () {
   	return (

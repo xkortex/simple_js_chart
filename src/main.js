@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('mount')
   );
   ReactDOM.render(
-  <SimpleLineChart />,
-  document.getElementById('container')
+    React.createElement(SimpleLineChart),
+    document.getElementById('container')
 );
 });
