@@ -1,0 +1,10 @@
+# react app stuff
+node_modules
+www/bundle.js
+
+# IDE
+.idea/*
+
+#cmake stufff
+avr/cmake-build-debug/*
+pid/dnail_pid/cmake-build-debug/*
