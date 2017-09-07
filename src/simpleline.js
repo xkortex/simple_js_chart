@@ -78,7 +78,7 @@ class SimpleLineChart extends React.Component {
 	render () {
   	return (
   	  <div className="well clearfix">
-        <LineChart width={600} height={300} data={gen_data()}
+        <LineChart width={600} height={300} data={this.chartData}
               margin={{top: 5, right: 30, left: 20, bottom: 5}}>
          <XAxis dataKey="name"/>
          <YAxis/>
@@ -95,6 +95,7 @@ class SimpleLineChart extends React.Component {
           {this.state.photoAdded ? "✓ Photo Added" : "Add Photo" }
         </button>
         {console.log('render')}
+        {console.log(this.chartData[0])}
       </div>
     );
   }
