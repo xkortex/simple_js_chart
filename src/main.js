@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Counter from './Counter';
 import SimpleLineChart from './simpleline'
-import XileLineChart from './xile_chart'
+import XileLineChart from './xile_chart2'
 
 
 

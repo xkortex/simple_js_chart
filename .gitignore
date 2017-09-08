@@ -1,6 +1,6 @@
 # react app stuff
 node_modules
-www/bundle.js
+www/js/bundle.js
 
 # IDE
 .idea/*
